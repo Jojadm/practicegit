@@ -21,6 +21,15 @@ Git reset HEAD~1
 5.
 Git push origin firstbranch
 
+6. 
+touch file6.txt file7.txt
+git add file6.txt file7.txt
+git commit -m « commit file6.txt and file7.txt”
+
+git rm –cached file7.txt
+git commit -m “remove file7.txt”
+git push origin firstbranch
+
 ==================================================
 
 A)
