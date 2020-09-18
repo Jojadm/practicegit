@@ -1,0 +1,41 @@
+A)
+1.
+ Via Github.com – Repositories – New Repo named “practicegit” with option Public and initialize with a README file – Create Repository
+Add file – create new file – name your file file1.txt.
+Edit new file : “hello form file 1.”
+Commit new file – commit directly to the master branch
+
+2.  
+mkdir JavaReskilling
+Cd JavaReskilling
+Mkdir GitProjects
+Cd GitProjects
+Ls
+Git init
+
+3.
+In GitHub clone the url
+Go to Gitbash : git clone https://github.com/Jojadm/practicegit.git
+
+4.
+Cd practicegit
+Git checkout -b firstbranch
+
+5.
+Touch file2.txt
+Echo “some content in file2” > file2.txt
+Git add file2.txt
+Git commit
+Opens an editor to enter a commit message. Entered “commit file2.txt”
+Git status
+Working tree is clean
+
+6.
+Git push origin firstbranch
+In GitHub: compare and pull request 
+Merge pull request
+
+
+
+
+
