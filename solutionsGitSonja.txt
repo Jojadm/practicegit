@@ -1,3 +1,28 @@
+B)
+1. 
+Touch file3.txt file4.txt
+Git add --all
+Git rm –cached file4.txt
+
+2.
+Git commit -m “commit file3.txt”
+Git commit –amend 
+In editor modify commit message “commit file3.txt modified”
+Git revert HEAD
+
+3.  git cherry-pick cbd522 (hashname of previous commit where file 3 was present)
+
+
+4.
+Git add file4.txt
+Git commit -m “commit file4.txt”
+Git reset HEAD~1 
+
+5.
+Git push origin firstbranch
+
+==================================================
+
 A)
 1.
  Via Github.com – Repositories – New Repo named “practicegit” with option Public and initialize with a README file – Create Repository
