@@ -1,3 +1,36 @@
+C)
+1. 
+GitHub edit file2.txt
+Git pull origin firstbranch
+Cat file2.txt => the new line added in GitHub is also present in my local repo
+
+2.
+Git checkout -b secondbranch
+Ls => all files are there
+
+3.
+Git branch -d firstbranch
+Git push origin –delete firstbranch
+
+4.
+Git checkout master
+Touch file2.txt
+Start file2.txt
+
+5.
+Git add file2.txt
+Git commit -m “change file2.txt in master branch”
+git checkout secondbranch
+git merge master => conflict
+Auto-merging file2.txt
+CONFLICT (content): Merge conflict in file2.txt
+Automatic merge failed; fix conflicts and then commit the result.
+
+Git status
+start file2.txt => correct the file 
+git add file2.txt
+git merge --continue
+
 B)
 1. 
 Touch file3.txt file4.txt
