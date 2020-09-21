@@ -1,3 +1,90 @@
+C)
+1. 
+GitHub edit file2.txt
+Git pull origin firstbranch
+Cat file2.txt => the new line added in GitHub is also present in my local repo
+
+2.
+Git checkout -b secondbranch
+Ls => all files are there
+
+3.
+Git branch -d firstbranch
+Git push origin –delete firstbranch
+
+4.
+Git checkout master
+Touch file2.txt
+Start file2.txt
+
+5.
+Git add file2.txt
+Git commit -m “change file2.txt in master branch”
+git checkout secondbranch
+git merge master => conflict
+Auto-merging file2.txt
+CONFLICT (content): Merge conflict in file2.txt
+Automatic merge failed; fix conflicts and then commit the result.
+
+Git status
+start file2.txt => correct the file 
+git add file2.txt
+git merge --continue
+
+6. 
+Touch file5.txt secret.txt
+Git add file5.txt secret.txt
+Git commit -m “added file5.txt and secret.txt”
+
+Git rm –cached secret.txt
+Touch .ignore
+Start .ignore => add file sercret.txt
+Git commit -m “ignore secret file”
+
+7. 
+Mkdir subdir
+cd subdir
+touch file8.txt file9.txt
+cd ..
+git add .  
+git commit -m “everything is committed”
+git push origin secondbranch
+
+
+B)
+1. 
+Touch file3.txt file4.txt
+Git add --all
+Git rm –cached file4.txt
+
+2.
+Git commit -m “commit file3.txt”
+Git commit –amend 
+In editor modify commit message “commit file3.txt modified”
+Git revert HEAD
+
+3.  git cherry-pick cbd522 (hashname of previous commit where file 3 was present)
+
+
+4.
+Git add file4.txt
+Git commit -m “commit file4.txt”
+Git reset HEAD~1 
+
+5.
+Git push origin firstbranch
+
+6. 
+touch file6.txt file7.txt
+git add file6.txt file7.txt
+git commit -m « commit file6.txt and file7.txt”
+
+git rm –cached file7.txt
+git commit -m “remove file7.txt”
+git push origin firstbranch
+
+==================================================
+
 A)
 1.
  Via Github.com – Repositories – New Repo named “practicegit” with option Public and initialize with a README file – Create Repository
