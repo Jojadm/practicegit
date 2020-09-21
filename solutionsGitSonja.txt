@@ -31,6 +31,24 @@ start file2.txt => correct the file
 git add file2.txt
 git merge --continue
 
+6. 
+Touch file5.txt secret.txt
+Git add file5.txt secret.txt
+Git commit -m “added file5.txt and secret.txt”
+
+Git rm –cached secret.txt
+Touch .ignore
+Start .ignore => add file sercret.txt
+Git commit -m “ignore secret file”
+
+7. 
+Mkdir subdir
+touch file8.txt file9.txt
+git add .  
+git commit -m “everything is committed”
+git push origin secondbranch
+
+
 B)
 1. 
 Touch file3.txt file4.txt
