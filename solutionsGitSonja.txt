@@ -43,7 +43,9 @@ Git commit -m “ignore secret file”
 
 7. 
 Mkdir subdir
+cd subdir
 touch file8.txt file9.txt
+cd ..
 git add .  
 git commit -m “everything is committed”
 git push origin secondbranch
